@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: gpstrace
+      POSTGRES_USER: gpstrace
+    ports:
+      - 5432:5432/tcp
